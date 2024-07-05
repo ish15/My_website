@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Navbar.css'
-import { Link } from 'react-router-dom'
+import './Navbar.css';
+// import { Link } from 'react-router-dom'; // Remove this line if not using Link component
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleXmark, faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
 
@@ -17,8 +17,7 @@ function Navbar() {
 
   // Add the icons
 
-  library.add(faCircleXmark, faBars)
-
+  library.add(faCircleXmark, faBars);
 
   return (
     <div className='navbar'>
@@ -34,7 +33,7 @@ function Navbar() {
             <FontAwesomeIcon icon={faBars} onClick={toggleMenu}/>
         </nav>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
